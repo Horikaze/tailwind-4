@@ -1,0 +1,20 @@
+{
+  "name": "tailwind-4",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "builddist": "npx @tailwindcss/cli@next -i src/style.css -o dist/src/style.css && npx copyfiles index.html dist",
+    "build": "npx @tailwindcss/cli@next -i src/style.css -o app.css",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "4.0.0-alpha.14",
+    "tailwindcss": "4.0.0-alpha.14"
+  }
+}
